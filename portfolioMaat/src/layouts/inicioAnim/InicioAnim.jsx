@@ -15,7 +15,7 @@ return (
         <main className='mainAnim'>
             <div className="loading-screen hero-box">
                 <animated.div style={animationProps} className="loading-name hero-content-1">
-                Hola!!<br></br>
+                Hey!!<br></br>
                 Soy Mario Aguilar 
                 </animated.div>
             </div>
