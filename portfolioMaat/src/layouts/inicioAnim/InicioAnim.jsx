@@ -11,10 +11,28 @@ export const InicioAnim = () => {
     });
 
 return (
-    <div className="loading-screen">
-        <animated.div style={animationProps} className="loading-name">
-        MARIO AGUILAR
-        </animated.div>
-    </div>
+    <>
+        <main className='mainAnim'>
+            <div className="loading-screen hero-box">
+                <animated.div style={animationProps} className="loading-name hero-content-1">
+                Hola!!<br></br>
+                Soy Mario Aguilar 
+                </animated.div>
+            </div>
+        </main>
+    </>
 )
 }
+
+{/*
+    <div class="hero-box">
+            <div class="hero-content-1">Frauen, </div>
+        </div>
+        <div class="hero-box">
+            <div class="hero-content-2">Frieden und</div>
+        </div>
+    
+        <div class="hero-box">
+            <div class="hero-content-3"> Sicherheit</div>
+        </div>
+*/}
