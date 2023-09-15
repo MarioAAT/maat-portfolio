@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { InicioAnim } from '../inicioAnim/InicioAnim';
+import '../../images/Circular.png';
+import './Home.css';
 
 export const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -17,10 +19,10 @@ return (
             {loading ? (
             <InicioAnim />
             ) : (
-                // Renderiza el contenido principal de tu aplicación aquí
-                <div>
+                
+                <main className='container-home'>
                     <h1>Bienvenido a mi sitio web</h1>
-                </div>
+                </main>
             )}
         </div>
     </>
