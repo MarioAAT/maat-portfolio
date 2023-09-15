@@ -12,7 +12,7 @@ export const InicioAnim = () => {
 
     const [texto, setTexto] = useState("");
     const velocidadEscritura = 100; // Tiempo en milisegundos entre letras
-    const textoCompleto = "Hola!!\nYo soy Mario Aguilar";
+    const textoCompleto = "Hello i'ts me, Mario!!";
 
     useEffect(() => {
         let i = 0;
