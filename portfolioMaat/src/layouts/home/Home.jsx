@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { InicioAnim } from '../inicioAnim/InicioAnim';
-import '../../images/Circular.png';
+import Image from 'react-bootstrap/Image';
+import muñeco from '../../images/muñeco.png';
 import './Home.css';
 
 export const Home = () => {
@@ -21,7 +22,16 @@ return (
             ) : (
                 
                 <main className='container-home'>
-                    <h1>Bienvenido a mi sitio web</h1>
+                    <div>
+                        <div className='img-muñeco'>
+                            <img src={muñeco} alt="" />
+                        </div>
+                        <figure class="text-end saludo-home">
+                            <blockquote class="blockquote">
+                                <p>Hola a todos, soy Mario Aguilar</p>
+                            </blockquote>
+                        </figure>
+                    </div>
                 </main>
             )}
         </div>

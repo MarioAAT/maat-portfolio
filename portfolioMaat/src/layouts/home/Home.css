@@ -9,3 +9,36 @@
     color: aliceblue;
     /* background-color: blue; */
 }
+
+.img-muñeco{
+    max-width: 100%;
+    height: auto;
+    /* background-image: url('../../images/muñeco.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    opacity: 0.5;
+}
+
+.saludo-home{
+    margin-right: 10vh;
+}
+
+@media (max-width: 768px) {
+    img {
+      max-width: 90%;
+    }
+  }
+  
+  /* Pantallas medianas */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    img {
+      max-width: 80%;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 1025px) {
+    img {
+      max-width: 100%;
+    }
+  }
