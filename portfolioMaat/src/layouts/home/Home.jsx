@@ -24,14 +24,19 @@ return (
                 <main className='container-principal-home'>
                     <div className='container-home'>
                         <div class="saludo-home">
-                            <div className='saludo'>Hola! Soy Mario Aguilar</div>                            
+                            <div className='saludo'><strong>Hola! Soy Mario Aguilar</strong></div>
+                            <div className='descripcion-uno'>
+                                Un <strong>Full Stack Developer</strong>. Colaboro en el desarrollo y evolución de aplicaciones web,<br></br>
+                                creando interfaces web intuitivas y a la implementación de funcionalidades sólidas en el lado del servidor.  
+                            </div>
+                            <div className='descripcion-uno'>Como desarrollador de software con experiencia, 
+                                me destaco por ser un profesional práctico y eficiente. Con un enfoque integral, 
+                                abordo tanto el desarrollo frontend como backend, contribuyendo a la implementación exitosa de proyectos digitales. </div>                            
                         </div>
                         <div className='img-muñeco'>
                             <img src={programadorC} alt="" />
                         </div>
-                        <div className='titulo-profesion'>
-                            FULL STACK DEVELOPER 
-                        </div>
+                        
                     </div>
                 </main>
             )}
