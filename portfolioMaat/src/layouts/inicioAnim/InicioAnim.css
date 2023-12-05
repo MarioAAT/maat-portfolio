@@ -5,19 +5,11 @@
     text-transform: uppercase;
     font-size:4vw;
     font-family: 'Press Start 2P' !important;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .hero-box {
     overflow: hidden;  
 }
-
-/* .hero-content-1{
-    animation: content-animation 4s 1 ease ;
-    animation-fill-mode: forwards; 
-    visibility: hidden;   
-    opacity: 0.2 ;
-} */
 
 .loading-screen {
     position: fixed;
@@ -42,8 +34,3 @@
     /* transform: skew(-10deg, 0deg);  */
 }
 
-/* @keyframes content-animation {
-    0% {transform: translateY(30VH);   visibility: visible; opacity:0} 
-    20% {opacity:0 ;}
-    100% {transform: translateY(0);  visibility: visible; opacity: 0.8}
-} */

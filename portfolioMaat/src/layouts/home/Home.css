@@ -1,26 +1,57 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&family=Rubik+Distressed&display=swap");
+
+.container-principal-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+
 .container-home{
     height: 80vh;
     width: 100vw;
     background-image: url('../../images/Circular.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: black;
     /* background-color: blue; */
 }
 
 .img-muñeco{
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     /* background-image: url('../../images/muñeco.png');
     background-size: cover;
     background-repeat: no-repeat; */
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .saludo-home{
-    margin-right: 10vh;
+
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    opacity: 0.3;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.titulo-profesion{
+    color: #4D2DB7;
+    font-size: 25px;
 }
 
 @media (max-width: 768px) {

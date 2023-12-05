@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { InicioAnim } from '../inicioAnim/InicioAnim';
-import Image from 'react-bootstrap/Image';
-import muñeco from '../../images/muñeco.png';
+// import Image from 'react-bootstrap/Image';
+// import muñeco from '../../images/muñeco.png';
+import programadorC from '../../images/programadorC.png'
 import './Home.css';
 
 export const Home = () => {
@@ -20,17 +21,17 @@ return (
             {loading ? (
             <InicioAnim />
             ) : (
-                
-                <main className='container-home'>
-                    <div>
-                        <div className='img-muñeco'>
-                            <img src={muñeco} alt="" />
+                <main className='container-principal-home'>
+                    <div className='container-home'>
+                        <div class="saludo-home">
+                            <div className='saludo'>Hola! Soy Mario Aguilar</div>                            
                         </div>
-                        <figure class="text-end saludo-home">
-                            <blockquote class="blockquote">
-                                <p>Hola a todos, soy Mario Aguilar</p>
-                            </blockquote>
-                        </figure>
+                        <div className='img-muñeco'>
+                            <img src={programadorC} alt="" />
+                        </div>
+                        <div className='titulo-profesion'>
+                            FULL STACK DEVELOPER 
+                        </div>
                     </div>
                 </main>
             )}
