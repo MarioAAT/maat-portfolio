@@ -18,8 +18,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* background-color: rgba(255, 255, 255, 0.5); */
     color: black;
@@ -27,7 +26,7 @@
 }
 
 .img-muñeco{
-    max-width: 60%;
+    max-width: 30%;
     height: auto;
     /* background-image: url('../../images/muñeco.png');
     background-size: cover;
@@ -35,7 +34,7 @@
     /* opacity: 0.5; */
 }
 
-.saludo-home{
+.saludo{
 
     display: flex;
     display: inline-block;
@@ -49,9 +48,10 @@
     border-radius: 5px;
 }
 
-.titulo-profesion{
+.descripcion-uno{
     color: #4D2DB7;
     font-size: 25px;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
