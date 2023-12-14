@@ -1,58 +1,117 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&display=swap" );
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" );
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
 
 .container-principal-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto';
+    font-family: 'Red Rose', serif;
 }
 
-
-.container-home{
-    height: 80vh;
-    width: 100vw;
+.container-header{
     background-image: url('../../images/Circular.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.5); */
     color: black;
-    /* background-color: blue; */
+}
+
+.saludo-home{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.saludo-home > div {
+  margin-bottom: 60px; 
 }
 
 .img-muñeco{
-    max-width: 30%;
-    height: auto;
-    /* background-image: url('../../images/muñeco.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
-    /* opacity: 0.5; */
+  max-width: 30%;
+  height: auto;
 }
 
 .saludo{
+  position: relative;
+  animation: saludo 2s ease infinite;
+}
 
-    display: flex;
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    opacity: 0.3;
-    z-index: 1;
-    padding: 5px;
-    border-radius: 5px;
+@keyframes saludo {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25%, 75% {
+      transform: translateX(10px);
+  }
+  50% {
+      transform: translateX(-10px);
+  }
+}
+.mario{
+  background-color: #f0f0f0;
+  color: #00f;
+  opacity: 0.8;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .descripcion-uno{
-    color: #4D2DB7;
-    font-size: 25px;
-    text-align: justify;
+  color: #add8e6;
+  font-size: 40px;
+  font-family: 'Iceberg', sans-serif;
+  text-align: justify;
 }
+.ocupacion{
+  color: #ffd700; 
+    font-size: 45px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.descripcion-dos{
+  color: white;
+  font-size: 25px;
+  text-align: justify;
+  
+}
+
+.stack{
+    height: 80vh;
+    background-image: url('../../images/Destello2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  justify-content: center;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+/* Estilos para la fila adicional */
+.grid-item.extra {
+  grid-column: span 3; /* Ocupa tres columnas en lugar de cuatro */
+}
+
 
 @media (max-width: 768px) {
     img {
