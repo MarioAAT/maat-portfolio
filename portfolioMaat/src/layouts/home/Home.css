@@ -79,26 +79,36 @@
 }
 
 .stack{
-    height: 80vh;
+    height: 90vh;
     background-image: url('../../images/Destello2.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.stack-titulo{
+    color: #ffd700; 
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 8px;
   justify-content: center;
 }
 
 .grid-item {
   text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
+  color: #add8e6;
+  font-size: 20px;
+  padding: 6px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
 
@@ -107,11 +117,16 @@
   max-height: 150px;
 }
 
-/* Estilos para la fila adicional */
-.grid-item.extra {
-  grid-column: span 3; /* Ocupa tres columnas en lugar de cuatro */
+.proyectos{
+  height: 80vh;
+  background-image: url('../../images/Sol.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
 }
-
 
 @media (max-width: 768px) {
     img {

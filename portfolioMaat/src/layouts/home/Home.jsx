@@ -2,6 +2,16 @@ import React, {useState, useEffect} from 'react';
 import { InicioAnim } from '../inicioAnim/InicioAnim';
 import programadorC from '../../images/programadorC.png'
 import react from '../../images/React1.png';
+import node from '../../images/node.png';
+import html from '../../images/html.png';
+import css from '../../images/css.png';
+import javascript from '../../images/javascript.png';
+import express from '../../images/express.png';
+import mysql from '../../images/mysql.png';
+import php from '../../images/php.png';
+import python from '../../images/python.png';
+import git from '../../images/git.png';
+import github from '../../images/github.png';
 import './Home.css';
 
 export const Home = () => {
@@ -15,7 +25,7 @@ export const Home = () => {
 
 return (
     <>
-        <div>
+        <div className='supra'>
             {loading ? (
             <InicioAnim />
             ) : (
@@ -33,55 +43,57 @@ return (
                         </div>
                     </header>
                     <section className='stack'>
-                        <h2>Stack Tecnologico</h2>
+                        <h2 className='stack-titulo'>Stack Tecnologico</h2>
                         <div class="grid-container">
                             <div class="grid-item">
                                 <img src={react} alt="" />
                                 <p>React</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 2</p>
+                                <img src={node} alt="" />
+                                <p>Node.Js</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 3</p>
+                                <img src={javascript} alt="" />
+                                <p>JavaScript</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 4</p>
+                                <img src={html} alt="" />
+                                <p>HTML</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 5</p>
+                                <img src={css} alt="" />
+                                <p>CSS</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 6</p>
+                                <img src={express} alt="" />
+                                <p>Express</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 7</p>
+                                <img src={mysql} alt="" />
+                                <p>MySQL</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 8</p>
+                                <img src={python} alt="" />
+                                <p>Python</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 9</p>
+                                <img src={php} alt="" />
+                                <p>PHP</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 10</p>
+                                <img src={git} alt="" />
+                                <p>Git</p>
                             </div>
                             <div class="grid-item">
-                                <img src="" alt="" />
-                                <p>Texto 11</p>
+                                <img src={github} alt="" />
+                                <p>GitHub</p>
                             </div>
                         </div>
                     </section>
-                    <a target="_blank" href="https://icons8.com/icon/bzf0DqjXFHIW/reaccionar">Reaccionar</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
+                    <section className='proyectos'>
+
+                    </section>
                 </main>
             )}
         </div>
