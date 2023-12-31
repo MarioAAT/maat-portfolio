@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-/* 'https://fonts.googleapis.com/css2?family=Roboto&display=swap' */
 .mainAnim {
     text-transform: uppercase;
     font-size:4vw;
@@ -24,13 +23,8 @@
 }
 
 .loading-name {
-    /* font-size: 80px; */
     color: white;
-    /* transform: rotateX(15deg); */
-    /* text-shadow: 3px 3px 5px rgb(255, 255, 255); */
     text-shadow: 0.2vw 0.2vw 0.6vw rgba(255, 255, 255, 0.5);
     -webkit-text-stroke: 0.2vw black; 
-    /* -webkit-text-stroke: 2px black;  */
-    /* transform: skew(-10deg, 0deg);  */
 }
 

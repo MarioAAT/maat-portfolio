@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { InicioAnim } from '../inicioAnim/InicioAnim';
+import { Carrusel } from '../../components/Carrusel';
 import programadorC from '../../images/programadorC.png'
 import react from '../../images/React1.png';
 import node from '../../images/node.png';
@@ -92,7 +93,7 @@ return (
                         </div>
                     </section>
                     <section className='proyectos'>
-
+                        {/* <Carrusel/> */}
                     </section>
                 </main>
             )}

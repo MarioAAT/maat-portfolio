@@ -7,11 +7,11 @@ export const InicioAnim = () => {
     const animationProps = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
-        delay: 500, // Retraso para que aparezca después de un tiempo
+        delay: 500, 
     });
 
     const [texto, setTexto] = useState("");
-    const velocidadEscritura = 100; // Tiempo en milisegundos entre letras
+    const velocidadEscritura = 100; 
     const textoCompleto = "Hello i'ts me, Mario!!";
 
     useEffect(() => {
@@ -36,22 +36,9 @@ return (
                 <animated.div style={animationProps} className="loading-name hero-content-1">
                     {texto}
                 </animated.div>
-                {/* <p className="loading-name hero-content-1" >{texto}</p> */}
             </div>
         </main>
     </>
 )
 }
 
-{/*
-    <div class="hero-box">
-            <div class="hero-content-1">Frauen, </div>
-        </div>
-        <div class="hero-box">
-            <div class="hero-content-2">Frieden und</div>
-        </div>
-    
-        <div class="hero-box">
-            <div class="hero-content-3"> Sicherheit</div>
-        </div>
-*/}
